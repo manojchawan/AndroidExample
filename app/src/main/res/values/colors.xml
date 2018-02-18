@@ -7,4 +7,11 @@
 
     <color name="white">#FFF</color>
     <color name="black">#000</color>
+
+    <color name="yellow">#FFA000</color>
+    <color name="blue">#1E88E5</color>
+    <color name="green">#52bf0c</color>
+    <color name="red">#FF5252</color>
+    <color name="drkgray">#535353</color>
+
 </resources>

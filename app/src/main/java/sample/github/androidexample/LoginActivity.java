@@ -1,5 +1,6 @@
 package sample.github.androidexample;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     Button loginButton, registerButton;
     EditText usernameED, passwordED;
     ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,18 +24,23 @@ public class LoginActivity extends AppCompatActivity {
         usernameED = findViewById(R.id.usernameED);
         passwordED = findViewById(R.id.passwordED);
         progressBar = findViewById(R.id.progessBar);
+        progressBar.setVisibility(View.GONE);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
