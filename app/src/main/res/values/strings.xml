@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Example</string>
+
+    <string name="version_num">V 1.0</string>
+    <string name="register_activity">Register</string>
+    <string name="login_activity">Login</string>
+
+</resources>
